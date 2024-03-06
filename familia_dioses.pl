@@ -38,4 +38,4 @@ esDescendienteDirecto(atena, afrodita).
 esDescendienteDirecto(atena, hefesto).
 esDescendienteDirecto(nera, hipolita).
 esDescendienteDirecto(nera, zeus).
-esDescendienteDirecto(hermes, atena).
+esDescendienteDirecto(hermes, atena). 
