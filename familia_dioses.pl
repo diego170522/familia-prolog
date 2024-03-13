@@ -42,7 +42,7 @@ esDescendienteDirecto(hermes,atena).
 
 % REGLAS
 
-esAncestro(Ancestro,Persona):- esDescendienteDirecto(Persona, Ancestro), esHombre(Ancestro).
-esAncestro(Ancestro,Persona):- esDescendienteDirecto(Persona, Padre), esAncestro(Ancestro, Padre).
+esAncestro(Ancestro,Persona):-esDescendienteDirecto(Persona, Ancestro),esHombre(Ancestro).
+esAncestro(Ancestro,Persona):-esDescendienteDirecto(Persona, Padre),esAncestro(Ancestro, Padre).
 
 
