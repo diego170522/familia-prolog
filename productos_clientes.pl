@@ -87,6 +87,7 @@ esPatito(destrunaitor500).
 esBlanco(lg510).
 esBlanco(bose).
 esNegro(samsungl200).
+esNegro(bose).
 esNegro(ps2).
 esNegro(ps3).
 esRojo(lgbatimix).
