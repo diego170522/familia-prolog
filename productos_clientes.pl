@@ -33,55 +33,59 @@ maria.
 juana.
 jeremias.
 
-% 1er nivel
-esProducto(electrodomestico).
-esProducto(entretenimiento).
-esProducto(computadoras).
-
+% clientes
 esCliente(maria).
 esCliente(juana).
 esCliente(jeremias).
 
-% 2do nivel
-esElectrodomestico(batidora).
-esElectrodomestico(lavadora).
+% productos
+esProducto(lg510).
+esProducto(samsungb125).
+esProducto(lgbatimix).
+esProducto(samsungl200).
+esProducto(bose).
+esProducto(lg).
+esProducto(xbox360).
+esProducto(xboxone).
+esProducto(ps2).
+esProducto(ps3).
+esProducto(omen560).
+esProducto(pavilion15a).
+esProducto(destrunaitor500).
 
-esEntretenimiento(parlantes).
-esEntretenimiento(consolas).
+% categorias
+esCategoriaDe(electrodomestico, producto).
+esCategoriaDe(entretenimiento, producto).
+esCategoriaDe(computadoras, producto).
 
-esComputadoras(laptop).
-esComputadoras(escritorio).
+esCategoriaDe(batidora, electrodomestico).
+esCategoriaDe(lavadora, electrodomestico).
+esCategoriaDe(parlantes, entretenimiento).
+esCategoriaDe(consolas, entretenimiento).
+esCategoriaDe(laptop, computadoras).
+esCategoriaDe(escritorio, computadoras).
 
-% 3er nivel
-esBatidora(lg510).
-esBatidora(samsungb125).
+esProductoDeTipo(lg510, batidora).
+esProductoDeTipo(samsungb125, batidora).
+esProductoDeTipo(lgbatimix, lavadora).
+esProductoDeTipo(samsungl200, lavadora).
+esProductoDeTipo(bose, parlantes).
+esProductoDeTipo(lg, parlantes).
+esProductoDeTipo(xbox, consolas).
+esProductoDeTipo(playstation, consolas).
 
-esLavadora(lgbatimix).
-esLavadora(samsungl200).
+esProductoDeTipo(dell, laptop).
+esProductoDeTipo(hp, laptop).
+esProductoDeTipo(dell, escritorio).
+esProductoDeTipo(hp, escritorio).
+esProductoDeTipo(patito, escritorio).
 
-esParlante(bose).
-esParlante(lg).
+esModeloDe(xbox360, xbox).
+esModeloDe(xboxone, xbox).
 
-esConsola(xbox).
-esConsola(playstation).
-
-esLaptop(dell).
-esLaptop(hp).
-
-esEscritorio(dell).
-esEscritorio(hp).
-esEscritorio(patito).
-
-% 4to nivel
-esXbox(xbox360).
-esXbox(xboxone).
-
-esPlayStation(ps2).
-esPlayStation(ps3).
-
-esDell(omen560).
-esHp(pavilion15a).
-esPatito(destrunaitor500).
+esModeloDe(omen560, dell).
+esModeloDe(pavilion15a, hp).
+esModeloDe(destrunaitor500, patito).
 
 % caracteristicas
 esBlanco(lg510).
