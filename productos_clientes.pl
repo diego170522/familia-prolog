@@ -29,11 +29,18 @@ omen560.
 pavilion15a.
 destrunaitor500.
 
+maria.
+juana.
+jeremias.
 
 % 1er nivel
 esProducto(electrodomestico).
 esProducto(entretenimiento).
 esProducto(computadoras).
+
+esCliente(maria).
+esCliente(juana).
+esCliente(jeremias).
 
 % 2do nivel
 esElectrodomestico(batidora).
@@ -75,5 +82,49 @@ esPlayStation(ps3).
 esDell(omen560).
 esHp(pavilion15a).
 esPatito(destrunaitor500).
+
+% caracteristicas
+esBlanco(lg510).
+esBlanco(bose).
+esNegro(samsungl200).
+esNegro(ps2).
+esNegro(ps3).
+esRojo(lgbatimix).
+esRojo(lg).
+esVerde(xbox360).
+esVerde(xboxone).
+esPlateado(omen560).
+esPlateado(pavilion15a).
+esPlateado(destrunaitor500).
+
+esBarato(lg510).
+esBarato(lgbatimix).
+esBarato(xbox360).
+esBarato(ps2).
+esBarato(ps3).
+esBarato(omen560).
+esBarato(destrunaitor500).
+
+esCaro(samsungb125).
+esCaro(samsungl200).
+esCaro(bose).
+esCaro(xboxone).
+esCaro(pavilion15a).
+
+esBueno(lg510).
+esBueno(samsungl200).
+esBueno(xboxone).
+esBueno(ps2).
+esBueno(ps3).
+esBueno(pavilion15a).
+esBueno(destrunaitor500).
+
+esMalo(samsungb125).
+esMalo(lgbatimix).
+esMalo(lg).
+esMalo(xbox360).
+esMalo(omen560).
+
+
 
 
