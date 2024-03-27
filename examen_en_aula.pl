@@ -43,5 +43,21 @@ estaEnCategoria(parlantes, entretenimiento).
 estaEnCategoria(electrodomestico, producto).
 estaEnCategoria(lavadora, producto).
 
-esProductoDentrodeCategoria(Producto, Categoia):-esProducto(Producto),esCategoria(Categoria),estaEnCategoria(Producto, Categoria).
+esProductoDentrodeCategoria(Producto, Categoria):-esProducto(Producto),esCategoria(Categoria),estaEnCategoria(Producto, Categoria).
 esProductoDentrodeCategoria(Producto, Categoria):-estaEnCategoria(Categoria2, Categoria),esProductoDentrodeCategoria(Producto, Categoria2).
+
+% Preferencias de Maria
+tieneCaracteristicas("LG-510", blanco, barato, bueno).
+tieneCaracteristicas("Samsung B125", negro, caro, malo).
+tieneCaracteristicas("LG Batimix", rojo, barato, malo).
+tieneCaracteristicas("Samsung L-200", negro, caro, bueno).
+tieneCaracteristicas("Bose", blanco, caro, bueno ).
+tieneCaracteristicas("LG", rojo, barato, malo).
+
+recomendarAMaria1(Producto):-esProducto(Producto),tieneCaracteristicaS(Producto, verde, _ , _ ),esProductoDentroDeCategoria(Producto, producto).
+
+recomendarAMaria2(Producto):-esProducto(Producto),tieneCaracteristicaS(Producto, blanco, barato , _ ),esProductoDentroDeCategoria(Producto, entretenimiento).
+
+recomendarAMaria3(Producto):-esProducto(Producto),tieneCaracteristicaS(Producto, rojo, _ , malo ),esProductoDentroDeCategoria(Producto, electrodomestico).
+
+recomendarAMaria4(Producto):-esProducto(Producto),tieneCaracteristicaS(Producto, _ , _ , caro ),esProductoDentroDeCategoria(Producto, producto).
