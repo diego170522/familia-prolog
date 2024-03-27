@@ -22,10 +22,10 @@ esProducto("LG").
 
 esCategoria(entretenimiento).
 esCategoria(electrodomestico).
-
 esCategoria(batidora).
 esCategoria(lavadora).
 esCategoria(parlantes).
+esCategoria(producto).
 
 estaEnCategoria("LG-510", batidora).
 estaEnCategoria("Samsung B125", batidora).
